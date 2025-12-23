@@ -6,7 +6,7 @@ from pathlib import Path
 st.set_page_config(page_title="Car Value Chat", layout="wide")
 st.title("Car Value Assistant")
 
-CSV_PATH = str((Path(__file__).resolve().parent / ".." / "car_price_prediction_ (1).csv").resolve())
+CSV_PATH = str((Path(__file__).resolve().parent  / "car_price_prediction_ (1).csv").resolve())
 
 @st.cache_resource(show_spinner=False)
 def _load():
